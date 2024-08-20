@@ -64,7 +64,7 @@ class PlaybackService: NSObject {
             if source.artwork != nil {
                 mediaSource.artwork = loadImageFromFlutterAssets(assetName: source.artwork!, registrar: FlutterRadioPlayerPlugin.registrar!)
             }
-            player?.add(item: mediaSource, playWhenReady: playWhenReady)
+            player?.load(item: mediaSource, playWhenReady: playWhenReady)
         }
     }
     
